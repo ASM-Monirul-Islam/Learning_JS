@@ -1,15 +1,31 @@
-.container{
-	height: 200px;
-	width: 350px;
-	background-color: green;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+.container {
+  height: 90vh;
+  width: 100%;
+  background-color: red;
+  display: flex;
+  flex-wrap: no-wrap;
+  gap: 50px;
+  justify-content: space-evenly;
 }
 
-.child{
-	height: 150px;
-	width: 150px;
-	background-color: red;
-	border-radius: 50%;
+.child {
+  height: 150px;
+  width: 15%;
+  background-color: blue;
+  margin-top: 10px;
+}
+
+@media only screen and (max-width: 431px) {
+  .container {
+    height: 15vh;
+    flex-wrap: wrap;
+    /* justify-content: flex-start; */
+    align-items: center;
+    gap: 10px;
+  }
+  .child {
+    height: 90%;
+    width: 15%;
+    margin: 0;
+  }
 }
