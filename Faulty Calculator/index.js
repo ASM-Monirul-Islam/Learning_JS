@@ -27,7 +27,6 @@ let obj = {
 }
 
 if(random> 0.1){
-	console.log(random);
 	alert(`The result is ${eval(`${a} ${c} ${b}`)}`)
 } else {
 	c=obj[c];
