@@ -1,35 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        .box{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .child {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border: 2px solid red;
-            margin: 5px;
-            padding: 5px;
-            height: 35px;
-            width: 50px;
-        }
-    </style>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Login Popup</title>
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="box">
-        <div class="child1 child">box 1</div>
-        <div id="hello" class="child2 child">box 2</div>
-        <div class="child3 child">box 3</div>
-        <div class="child4 child">box 4</div>
-        <div class="child5 child">box 5</div>
-    </div>
-    <script src="Index.js"></script>
+	<div class="container">
+		<div class="box">
+			Hello this is Monirul Islam
+		</div>
+		<button id="btn">Login</button>
+	</div>
+
+	<!-- 🔒 Hidden login popup -->
+	<div id="login-popup" class="popup hidden">
+		<div class="popup-content">
+			<h2>Login</h2>
+			<input type="text" placeholder="Username" />
+			<input type="password" placeholder="Password" />
+			<button id="login-submit">Login</button>
+			<button id="close-popup">Close</button>
+		</div>
+	</div>
+
+	<script src="script.js"></script>
 </body>
 </html>
