@@ -70,6 +70,39 @@ console.log(num); //[ 1, 50, 50, 4, 5, 6, 7]
 
 console.log(num.slice(1, 3)); //[ 50, 50 ]
 
+let x = [1, 99, 2, 9, 32, 3];
+x.forEach((value,  index, x)=> {
+	console.log(value, index, x);
+})
+
+/*
+1 0 [ 1, 99, 2, 9, 32, 3 ]
+99 1 [ 1, 99, 2, 9, 32, 3 ]
+2 2 [ 1, 99, 2, 9, 32, 3 ]
+9 3 [ 1, 99, 2, 9, 32, 3 ]
+32 4 [ 1, 99, 2, 9, 32, 3 ]
+3 5 [ 1, 99, 2, 9, 32, 3 ]
+*/
+
+for(const value of x){
+	console.log(value);
+}
+/*
+1
+99
+2
+9
+32
+3
+*/
+
+
+let newArr = [];
+for(let i=0; i<x.length; i++) {
+	const element = x[i];
+	newArr.push(element**2);
+}
+console.log(newArr); //[ 1, 9801, 4, 81, 1024, 9 ]
 
 
 
