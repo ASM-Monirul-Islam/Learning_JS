@@ -1,0 +1,61 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+.container{
+	height: fit-content;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* display: none; */
+}
+
+#MyForm {
+	padding: 10px 20px;
+	margin: 10px;
+	border: none;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+
+#name, #email{
+	padding: 5px 10px;
+	border-radius: 5px;
+	border: 1px solid gray;
+}
+
+#submit, #reset {
+	padding: 3px 7px;
+	border-radius: 5px;
+	border: 1px solid black;
+	background-color: white;
+	cursor: pointer;
+}
+
+/* Card Design */
+
+.card-container{
+	height: 150px;
+	width: 90%;
+	margin: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 5px 7px;
+}
+
+.image img{
+	height: 100px;
+	width: 100px;
+	border: none;
+	border-radius: 5px;
+	box-shadow: 0 0 10px;
+	margin-right: 20px;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CreateCard using Form Data</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form id="MyForm">
+        <input type="text" id="name" placeholder="Name" />
+        <input type="email" id="email" placeholder="yourmail@gmail.com" />
+        <div class="date-of-birth">
+          <label for="birthdate">Your Birthdate: </label>
+          <input type="date" id="BirthDate" />
+        </div>
+        <div class="photo-section">
+          <label>Your Image: </label>
+          <input type="file" id="image" />
+        </div>
+        <div class="button">
+          <button id="submit" type="submit">Submit</button>
+          <button id="reset" type="reset">Reset</button>
+        </div>
+      </form>
+    </div>
+	<div id="card-wrapper"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

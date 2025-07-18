@@ -99,10 +99,10 @@
 }
 
 .mobile-menu {
-	display: none;
-	margin-right: 15px;
-	font-size: 1.2rem;
-	cursor: pointer;
+  display: none;
+  margin-right: 15px;
+  font-size: 1.2rem;
+  cursor: pointer;
 }
 
 #menu-section {
@@ -110,46 +110,46 @@
   top: 60px;
   min-height: 50vh;
   right: 0;
-	height: fit-content;
-	padding: 10px 20px;
-	width: 30%;
-	border: none;
-	background-color: white;
-	box-shadow: 0 0 10px;
-	margin: 2px 0px;
-	border-radius: 10px;
+  height: fit-content;
+  padding: 10px 5px;
+  width: 30%;
+  border: none;
+  background-color: white;
+  box-shadow: 0 0 10px;
+  margin: 2px 0px;
+  border-radius: 10px;
 }
 
-.hidden2{
-	display: none;
+#menu-section .item {
+  padding: 2px 5px;
+  margin: 2px;
+  border: 1px solid black;
+  text-align: center;
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  font-size: 0.8rem;
 }
 
-#menu-section ul {
-	display: flex;
-	flex-direction: column;
+#login2,
+#register2 {
+  border: none;
+  background-color: white;
+  width: 100%;
+  cursor: pointer;
 }
 
-#menu-section ul li{
-	padding: 2px 5px;
-	margin: 2px;
-	border: 1px solid black;
-	text-align: center;
-	width: 100%;
-	border: 1px solid rgba(0, 0, 0, 0.3);
-	border-radius: 10px;
-	font-size: 0.9rem;
+.hidden {
+  display: none;
+}
+.hidden2 {
+  display: none;
 }
 
-#login2, #register2 {
-	border: none;
-	background-color: white;
-	width: 100%;
-	cursor: pointer;
-}
 
 @media only screen and (max-width: 1024px) {
   .nav {
-    height:40px;
+    height: 40px;
   }
 
   .left-nav {
@@ -167,22 +167,19 @@
 
   .right-nav button {
     padding: 2px 7px;
-	font-size: 0.8rem;
+    font-size: 0.8rem;
   }
 }
 
 @media only screen and (max-width: 550px) {
-	.right-nav {
-		display:none;
-	}
-	.mobile-menu{
-		display: flex;
-	}
+  .right-nav {
+    display: none;
+  }
+  .mobile-menu {
+    display: flex;
+  }
   #menu-section {
-  top: 40px;
+    top: 40px;
+  }
 }
 
-}
-.hidden {
-  display: none;
-}
